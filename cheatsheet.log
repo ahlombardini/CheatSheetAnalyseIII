@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  31 DEC 2024 16:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  4 JAN 2025 15:33
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -152,6 +152,22 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen159
 \Gin@req@width=\dimen160
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
+\CenteringLeftskip=\skip57
+\RaggedLeftLeftskip=\skip58
+\RaggedRightLeftskip=\skip59
+\CenteringRightskip=\skip60
+\RaggedLeftRightskip=\skip61
+\RaggedRightRightskip=\skip62
+\CenteringParfillskip=\skip63
+\RaggedLeftParfillskip=\skip64
+\RaggedRightParfillskip=\skip65
+\JustifyingParfillskip=\skip66
+\CenteringParindent=\skip67
+\RaggedLeftParindent=\skip68
+\RaggedRightParindent=\skip69
+\JustifyingParindent=\skip70
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/textpos/textpos.sty
 Package: textpos 2022/07/23 v1.10.1
 Package textpos Info: choosing support for LaTeX3 on input line 60.
@@ -174,8 +190,8 @@ Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \ar@mcellbox=\box56
 \extrarowheight=\dimen169
 \NC@list=\toks32
-\extratabsurround=\skip57
-\backup@length=\skip58
+\extratabsurround=\skip71
+\backup@length=\skip72
 \ar@cellbox=\box57
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
@@ -210,8 +226,8 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \page@free=\dimen185
 \premulticols=\dimen186
 \postmulticols=\dimen187
-\multicolsep=\skip59
-\multicolbaselineskip=\skip60
+\multicolsep=\skip73
+\multicolbaselineskip=\skip74
 \partial@page=\box59
 \last@line=\box60
 \mc@boxedresult=\box61
@@ -279,20 +295,20 @@ LaTeX Warning: Unused global option(s):
 (./cheatsheet.aux)
 \openout1 = `cheatsheet.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -346,115 +362,150 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
+)) [1
+
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
 []\OT1/cmr/m/n/10 Select closed curves $^^@$
  []
 
 
-Overfull \hbox (11.84865pt too wide) detected at line 138
+Overfull \hbox (11.84865pt too wide) detected at line 160
 [] [][] [] \OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 dx dy \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 F \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 n dl \OT1/cmr/m/n/10 = [][] [] \OML/cmm/m/it/10 dt:
  []
 
 
-Overfull \hbox (87.03075pt too wide) detected at line 146
+Overfull \hbox (87.03075pt too wide) detected at line 168
 [] [] [][] [] \OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 dx dy dz \OT1/cmr/m/n/10 = [] [][] \OML/cmm/m/it/10 F \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 n ds \OT1/cmr/m/n/10 = [] [][]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^[\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u; v\OT1/cmr/m/n/10 )); \OML/cmm/m/it/10 ^^[[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u; v\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^ \OML/cmm/m/it/10 ^^[[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u; v\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 i \OML/cmm/m/it/10 du dv
  []
 
-<images/dirac_delta.png, id=1, 554.3109pt x 411.2163pt>
+<images/dirac_delta.png, id=11, 554.3109pt x 411.2163pt>
 File: images/dirac_delta.png Graphic file (type png)
 <use images/dirac_delta.png>
-Package pdftex.def Info: images/dirac_delta.png  used on input line 253.
+Package pdftex.def Info: images/dirac_delta.png  used on input line 275.
 (pdftex.def)             Requested size: 147.52144pt x 109.43611pt.
 
-Overfull \hbox (7.02524pt too wide) in paragraph at lines 251--254
+Overfull \hbox (7.02524pt too wide) in paragraph at lines 273--276
 [] 
  []
 
-<images/dirac_comb.png, id=3, 557.2017pt x 410.4936pt>
+<images/dirac_comb.png, id=13, 557.2017pt x 410.4936pt>
 File: images/dirac_comb.png Graphic file (type png)
 <use images/dirac_comb.png>
-Package pdftex.def Info: images/dirac_comb.png  used on input line 260.
+Package pdftex.def Info: images/dirac_comb.png  used on input line 282.
 (pdftex.def)             Requested size: 147.52144pt x 108.68007pt.
 
-Overfull \hbox (7.02524pt too wide) in paragraph at lines 257--261
+Overfull \hbox (7.02524pt too wide) in paragraph at lines 279--283
 [] 
  []
 
-<images/scaled_dirac_delta.png, id=4, 549.252pt x 414.1071pt>
+<images/scaled_dirac_delta.png, id=14, 549.252pt x 414.1071pt>
 File: images/scaled_dirac_delta.png Graphic file (type png)
 <use images/scaled_dirac_delta.png>
-Package pdftex.def Info: images/scaled_dirac_delta.png  used on input line 266.
+Package pdftex.def Info: images/scaled_dirac_delta.png  used on input line 288.
 (pdftex.def)             Requested size: 147.52144pt x 111.22276pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--267
+Underfull \hbox (badness 10000) in paragraph at lines 286--289
 
  []
 
 
-Overfull \hbox (7.02524pt too wide) in paragraph at lines 264--267
+Overfull \hbox (7.02524pt too wide) in paragraph at lines 286--289
 [] 
  []
 
-<images/heaviside.png, id=5, 549.252pt x 412.6617pt>
+<images/heaviside.png, id=15, 549.252pt x 412.6617pt>
 File: images/heaviside.png Graphic file (type png)
 <use images/heaviside.png>
-Package pdftex.def Info: images/heaviside.png  used on input line 276.
+Package pdftex.def Info: images/heaviside.png  used on input line 298.
 (pdftex.def)             Requested size: 147.52144pt x 110.83455pt.
 
-Overfull \hbox (7.02524pt too wide) in paragraph at lines 270--277
+Overfull \hbox (7.02524pt too wide) in paragraph at lines 292--299
 [] 
  []
 
-[1
-
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./images/dirac_delta.png> <./images/dirac_comb.png> <./images/scaled_dirac_delta.png> <./images/heaviside.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 317--319
+[1 <./images/dirac_delta.png> <./images/dirac_comb.png> <./images/scaled_dirac_delta.png> <./images/heaviside.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 338--341
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--345
+Underfull \hbox (badness 10000) in paragraph at lines 359--361
 
  []
 
 
-Overfull \hbox (8.58447pt too wide) detected at line 399
-[][][]  \OT1/cmr/m/n/10 +   [](\OML/cmm/m/it/10 a[] []\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 b[] []\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ))[] = [] [][]\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 a[] []\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 b[] []\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--406
+Underfull \hbox (badness 10000) in paragraph at lines 390--392
 
  []
 
-[2] (./cheatsheet.aux)
+
+Overfull \hbox (46.74629pt too wide) detected at line 451
+\OML/cmm/m/it/9 g\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 x\OT1/cmr/m/n/9 ) = [] \OML/cmm/m/it/9 e[];  []\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 \OT1/cmr/m/n/9 ) = []\OML/cmm/m/it/9 ;  u\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 x\OT1/cmr/m/n/9 ) = (\OML/cmm/m/it/9 g \OMS/cmsy/m/n/9 ^^C \OML/cmm/m/it/9 f\OT1/cmr/m/n/9 )(\OML/cmm/m/it/9 x\OT1/cmr/m/n/9 ) = []  [][] \OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 y\OT1/cmr/m/n/9 ) \OML/cmm/m/it/9 e[] dy:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 524--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--529
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 530--532
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--536
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--545
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--550
+
+ []
+
+
+Overfull \hbox (47.76003pt too wide) in paragraph at lines 551--556
+\OMS/cmsy/m/n/9 Ff[]\OT1/cmr/m/n/9 [ \OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 x\OT1/cmr/m/n/9 ) ]\OMS/cmsy/m/n/9 g \OT1/cmr/m/n/9 = []\OML/cmm/m/it/9 ;  \OMS/cmsy/m/n/9 Ff[]\OT1/cmr/m/n/9 [ \OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 x\OT1/cmr/m/n/9 ) ]\OMS/cmsy/m/n/9 g \OT1/cmr/m/n/9 =
+ []
+
+[2] [3] (./cheatsheet.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3989 strings out of 474116
- 60705 string characters out of 5743683
- 1972187 words of memory out of 5000000
- 26309 multiletter control sequences out of 15000+600000
- 565098 words of font info for 63 fonts, out of 8000000 for 9000
+ 4099 strings out of 474116
+ 62943 string characters out of 5743683
+ 1998187 words of memory out of 5000000
+ 26409 multiletter control sequences out of 15000+600000
+ 567411 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,12n,65p,458b,242s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on cheatsheet.pdf (2 pages, 300846 bytes).
+ 57i,12n,65p,751b,297s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on cheatsheet.pdf (4 pages, 395965 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
+ 161 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

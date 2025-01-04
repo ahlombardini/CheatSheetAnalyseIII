@@ -3,6 +3,7 @@
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{enumitem}
 \usepackage{graphicx} % Required for \includegraphics
+\usepackage{ragged2e}
 
 \usepackage[absolute,overlay]{textpos}
 \usepackage{array} % For better column definitions
@@ -18,6 +19,7 @@
 \usepackage{setspace}
 \setstretch{1}
 \pagestyle{empty}
+
 % Redefine the textblock environment
 \let\originaltextblock\textblock
 \let\endoriginaltextblock\endtextblock
@@ -34,6 +36,25 @@
 
 
 \begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    {\Huge \textbf{Analysis III - CheatSheet}} \\
+    \vspace{10px}
+    {\LARGE IN~BA3 - Martin Werner Licht} \\
+    \vspace*{1cm}
+    {\Large Notes by Ali EL AZDI} \\
+    \vfill
+
+    \begin{justify}
+        \textit{An Analysis III Cheatsheet has been authorized for the upcoming exam, and I’m sharing a copy of mine for anyone interested. It provides a concise summary of the key concepts and techniques covered in the course. While it’s not yet complete, I plan to update it soon, especially to include additional trigonometric identities and a step-by-step guide to solving differential equations using Fourier methods. When printing, you can select the last two pages, as only one A4 recto-verso page is allowed. For any updates or suggestions, feel free to reach out to me on Telegram at \texttt{elazdi\_al} or via EPFL email at \texttt{ali.elazdi@epfl.ch}.}
+    \end{justify}
+    \vspace*{100px}
+
+    {\large January 3rd, 2025}
+    \vspace*{20px}
+\end{titlepage}
+
 
 \vspace*{-10px}
 \noindent\textbf{Regular Curve.}
@@ -276,140 +297,282 @@ A distribution $T \in \mathcal{D}'$ satisfies: \vspace{-13px}\hspace{170px}\fbox
     \end{cases}$ \\
     \includegraphics[width=1.05\linewidth]{images/heaviside.png}
 \end{minipage}
-\normalsize
+% Reduce paragraph spacing/indentation:
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+
+
+\footnotesize  % Slightly smaller font to fit all content comfortably
+
+\begingroup
+% ----------------------------------------------------------------------
+% Adjust spacing for displayed equations:
+\setlength{\abovedisplayskip}{3pt}
+\setlength{\belowdisplayskip}{3pt}
+\setlength{\abovedisplayshortskip}{2pt}
+\setlength{\belowdisplayshortskip}{2pt}
+
+% Adjust spacing for itemize/enumerate:
+\let\oldenumerate\enumerate
+\def\enumerate{\oldenumerate
+  \setlength{\itemsep}{0pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}
+\let\olditemize\itemize
+\def\itemize{\olditemize
+  \setlength{\itemsep}{0pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}
+\setstretch{0.6}
+% ----------------------------------------------------------------------
+\small
 \begin{multicols}{2}
-    \noindent \textbf{Piecewise Continuity \& Differentiability}\\
-    A function $f:[a,b]\to\mathbb{R}$ is \emph{piecewise continuous} if there is a partition
-    \[ a=a_0 < a_1 < \dots < a_n = b \]
-    such that $\lim_{x \to a_i^-} f(x)$ and $\lim_{x \to a_i^+} f(x)$ exist (finite).\\
-    Similarly, $f$ is \emph{piecewise $C^1$} if it is continuously differentiable on each open subinterval and the one‐sided derivatives at boundaries exist. \\
-    \noindent \textbf{Euler's Formulas}
-    \[
-    e^{x+iy} = e^{x}\bigl(\cos y + i \sin y\bigr),\;
-    \sin x = \frac{e^{ix}-e^{-ix}}{2i},\;
-    \cos x = \frac{e^{ix}+e^{-ix}}{2}.
-    \]
-    \noindent \textbf{Orthogonality (Sine/Cosine Products)}\\
-    For $n,m \in \mathbb{N}_{\ge 1}$ and period $T>0$:
-    \[
-    \frac{2}{T} \int_{0}^{T}
-    \cos\!\Bigl(\tfrac{2\pi n}{T}x\Bigr)\cos\!\Bigl(\tfrac{2\pi m}{T}x\Bigr)\,dx
-    =
-    \begin{cases}
-    1 & n=m,\\
-    0 & n\neq m
-    \end{cases}
-    \]
-    (same for $\sin\sin$, and $\cos\sin$ integrates to $0$).
-    \noindent \textbf{Integration Over One Period}\\
-    If $f$ is $T$-periodic and piecewise continuous, then for any $a\in\mathbb{R}$:
-    \[
-    \int_{a}^{a+T} f(x)\,dx = \int_{0}^{T} f(x)\,dx.
-    \]
-    \noindent \textbf{Dirichlet's Theorem (Pointwise Convergence)}\\
-    Let \( f : \mathbb{R} \to \mathbb{R} \) be \( T \)-periodic and piecewise \( C^1 \). Then, for all \( x \in \mathbb{R} \),
-    \[
-    Ff(x) = \lim_{t \to 0} \frac{f(x - t) + f(x + t)}{2}.
-    \]
-    \noindent \textbf{Real Fourier Series}\\
-    For $f:\mathbb{R}\to\mathbb{R}$, $T$-periodic, piecewise $C^1$, the real Fourier series is
-    \[
-    Ff(x)= \frac{a_{0}}{2} + \sum_{n=1}^{\infty}\!\bigl[a_{n}\cos(\tfrac{2\pi n}{T}x)+b_{n}\sin(\tfrac{2\pi n}{T}x)\bigr].
-    \]
-    \noindent \textbf{Fourier Coefficients:} \\
-    \[
-    a_{n} = \frac{2}{T}\!\int_{0}^{T}\!f(x)\cos\Bigl(\tfrac{2\pi n}{T}x\Bigr)dx,\quad
-    b_{n} = \frac{2}{T}\!\int_{0}^{T}\!f(x)\sin\Bigl(\tfrac{2\pi n}{T}x\Bigr)dx,
-    \]
-    \[
-    a_{0} = \frac{2}{T}\int_{0}^{T} f(x)\,dx.
-    \]
-    \noindent \textbf{Parity:} If $f$ even, $b_{n}=0$; if $f$ odd, $a_{n}=0$.\\
-    \noindent \textbf{Convolution Product}\\
-    Let \(f, g : \mathbb{R} \to \mathbb{R}\) such that \(\int_{-\infty}^{+\infty} |f(x)| dx < +\infty\) and \(\int_{-\infty}^{+\infty} |g(x)| dx < +\infty\).\\ The convolution product of \(f\) and \(g\) is defined by:
-    \[
-    (f * g)(x) = \int_{-\infty}^{+\infty} f(x - t) g(t) dt = \int_{-\infty}^{+\infty} f(t) g(x - t) dt
-    \]
+
+\noindent \textbf{Piecewise Continuity \& Differentiability}\\
+$f:[a,b]\to\mathbb{R}$ is \emph{piecewise continuous} if there is a partition
+\[
+  a=a_0 < a_1 < \dots < a_n = b
+\]
+such that $\lim_{x \to a_i^-} f(x)$ and $\lim_{x \to a_i^+} f(x)$ exist (finite).\\
+Similarly, $f$ is \emph{piecewise $C^1$} if it is continuously differentiable on each open subinterval and the one‐sided derivatives at boundaries exist.\\
+
+\noindent \textbf{Euler's Formulas}
+\[
+  e^{x+iy} = e^{x}\bigl(\cos y + i \sin y\bigr),\;
+  \sin x = \frac{e^{ix}-e^{-ix}}{2i},\;
+  \cos x = \frac{e^{ix}+e^{-ix}}{2}.
+\]
+
+\noindent \textbf{Orthogonality (Sine/Cosine Products)}\\
+For $n,m \in \mathbb{N}_{\ge 1}$ and period $T>0$:
+\[
+  \frac{2}{T} \int_{0}^{T}
+  \cos\!\Bigl(\tfrac{2\pi n}{T}x\Bigr)\cos\!\Bigl(\tfrac{2\pi m}{T}x\Bigr)\,dx
+=
+\begin{cases}
+1 & n=m,\\
+0 & n\neq m
+\end{cases}
+\]
+(Same for $\sin\sin$, and $\cos\sin$ integrates to $0$.)\\
+
+\noindent \textbf{Integration Over One Period}\\
+If $f$ is $T$-periodic and piecewise continuous, then for any $a\in\mathbb{R}$:
+\[
+  \int_{a}^{a+T} f(x)\,dx = \int_{0}^{T} f(x)\,dx.
+\]
+
+\noindent \textbf{Dirichlet's Theorem (Pointwise Convergence)}\\
+Let \( f : \mathbb{R} \to \mathbb{R} \) be \( T \)-periodic and piecewise \( C^1 \). Then, for all \( x \in \mathbb{R} \),
+\[
+  Ff(x) = \lim_{t \to 0} \frac{f(x - t) + f(x + t)}{2}.
+\]
+
+\noindent \textbf{Real Fourier Series}\\
+For $f:\mathbb{R}\to\mathbb{R}$, $T$-periodic, piecewise $C^1$, the real Fourier series is
+\[
+  Ff(x)= \frac{a_{0}}{2}
+   + \sum_{n=1}^{\infty}\!\Bigl[a_{n}\cos\!\bigl(\tfrac{2\pi n}{T}x\bigr)
+   + b_{n}\sin\!\bigl(\tfrac{2\pi n}{T}x\bigr)\Bigr].
+\]
+\noindent \textbf{Fourier Coefficients:}
+\[
+  a_{n} = \frac{2}{T}\!\int_{0}^{T}\!f(x)
+          \cos\!\Bigl(\tfrac{2\pi n}{T}x\Bigr)\,dx,\quad
+  b_{n} = \frac{2}{T}\!\int_{0}^{T}\!f(x)
+          \sin\!\Bigl(\tfrac{2\pi n}{T}x\Bigr)\,dx,
+\]
+\[
+  a_{0} = \frac{2}{T}\int_{0}^{T} f(x)\,dx.
+\]
+\noindent \textbf{Parity:} If $f$ is even, $b_{n}=0$; if $f$ is odd, $a_{n}=0$.\\
+
+\small
+\noindent \textbf{Convolution Product}\\
+Let \(f,g:\mathbb{R} \to \mathbb{R}\) such that
+\(\int_{-\infty}^{+\infty} |f(x)|\,dx < +\infty\) and
+\(\int_{-\infty}^{+\infty} |g(x)|\,dx < +\infty\).
+\[
+  (f * g)(x)
+  = \int_{-\infty}^{+\infty} f(x - t)\,g(t)\,dt
+  = \int_{-\infty}^{+\infty} f(t)\,g(x - t)\,dt
+\]
+\noindent \textbf{Term-by-Term Differentiation}\\
+If $f$ is $T$-periodic, continuous, and piecewise $C^1$, then
+\[
+  \frac{d}{dx}\bigl[Ff(x)\bigr]
+  = \sum_{n=1}^\infty \frac{2\pi n}{T}\bigl[-\,a_n\sin(\tfrac{2\pi n}{T}x)
+    +b_n\cos(\tfrac{2\pi n}{T}x)\bigr]
+\]
+\[
+  = \lim_{t \to 0} \frac{f'(x - t) + f'(x + t)}{2}.
+\]
+
+\noindent \textbf{1) Poisson on }$[a,b]$:
+\[
+\begin{cases}
+-\,u''(x)=f(x),\\[2pt]
+u(a)=g_a,\quad u(b)=g_b,
+\end{cases}
+\quad
+L = b - a
+\]
+\[
+u^g(x)=\frac{g_b-g_a}{b-a}\,x \;+\;\frac{b\,g_a - a\,g_b}{b-a}.
+\]
+\[
+f(x)=\sum_{n=1}^{\infty} b_n \,\sin\!\Bigl(\frac{n\pi x}{L}\Bigr),
+\quad
+b_n=\frac{2}{L}\int_{0}^{L}f(t)\,\sin\!\Bigl(\frac{n\pi t}{L}\Bigr)\,dt,
+\]
+\[
+u^f(x)=\sum_{n=1}^{\infty} b_n \,\frac{L^2}{\pi^2\,n^2}
+\,\sin\!\Bigl(\frac{n\pi x}{L}\Bigr).
+\]
+\[
+u(x)=u^g(x)+u^f(x).
+\]
+\noindent \textbf{2) Poisson with mass term on }$\mathbb{R}$:
+\[
+-\,u''(x)+k^2\,u(x)=f(x),
+\quad
+\widehat{u}(\alpha)=\frac{\widehat{f}(\alpha)}{\alpha^2 + k^2}.
+\]
+\[
+g(x)=\frac{1}{2k}\,e^{-k|x|},
+\quad
+\widehat{g}(\alpha)=\frac{1}{\alpha^2 + k^2},
+\quad
+u(x)=(g*f)(x)
+=\frac{1}{2k}\!\int_{-\infty}^{\infty} f(y)\,e^{-k|\,x-y\,|}\,dy.
+\]
+
+\columnbreak
+
+\noindent \textbf{Complex Fourier Coefficient}\\
+Let \( f : \mathbb{R} \to \mathbb{R} \) be \( T \)-periodic and piecewise continuous.  The complex Fourier coefficients are:
+\[
+  c_n = \frac{1}{T} \int_0^T f(x)\, e^{-i \frac{2\pi}{T} n x} \, dx,
+  \quad
+  Ff(x) = \sum_{n=-\infty}^{\infty} c_{n}\,e^{i\frac{2\pi n}{T}x}.
+\]
+For \( \phi : \mathbb{R} \to \mathbb{C} \),
+\[
+  \int_a^b \phi(x)\,dx
+  = \int_a^b \operatorname{Re}(\phi(x)) \, dx + i \int_a^b \operatorname{Im}(\phi(x)) \, dx.
+\]
+\noindent \textbf{Relation to \( (a_n, b_n) \)}\quad
+\[
+  c_{n} = \tfrac{1}{2}(a_{n} - i\,b_{n}),\
+  c_{-n} = \tfrac{1}{2}(a_{n} + i\,b_{n}),\
+  c_{0} = \tfrac{a_{0}}{2}.
+\]
+
+\noindent \textbf{Fourier Series on $[0,L]$}\\
+For $f:[0,L]\to \mathbb{R}$ (piecewise $C^1$):
+\[
+  F_{c}f(x)=\tfrac{\tilde a_{0}}{2} + \sum_{n=1}^{\infty}\!\tilde a_{n}\cos\!\Bigl(\tfrac{\pi n}{L}x\Bigr),
+  \quad \tilde a_{n}=\frac{2}{L}\int_{0}^{L} f(x)\cos\!\Bigl(\tfrac{\pi n}{L}x\Bigr)\,dx.
+\]
+\[
+  F_{s}f(x)=\sum_{n=1}^{\infty}\!\tilde b_{n}\sin\!\Bigl(\tfrac{\pi n}{L}x\Bigr),
+  \quad \tilde b_{n}=\frac{2}{L}\int_{0}^{L} f(x)\sin\!\Bigl(\tfrac{\pi n}{L}x\Bigr)\,dx.
+\]
+
+\noindent \textbf{Parseval's Identity (Periodic Case)}\\
+If $f$ is $T$-periodic (piecewise $C^1$),
+\[
+  \frac{1}{T}\int_{0}^{T} f^{2}(x)\,dx
+  = \frac{a_{0}^{2}}{2} + \sum_{n=1}^{\infty}(a_{n}^{2}+b_{n}^{2})
+  = \sum_{n=-\infty}^{\infty}\!\!\bigl|c_{n}\bigr|^{2}.
+\]
+
+\noindent \textbf{Plancherel Theorem}\\
+Let $f \in L^2(\mathbb{R})$. Then its Fourier transform $\hat{f}$ is also in $L^2(\mathbb{R})$, and:
+\[
+  \int_{-\infty}^\infty |f(x)|^2 \, dx
+  = \int_{-\infty}^\infty |\hat{f}(\xi)|^2 \, d\xi.
+\]
+
+\noindent \textbf{The Fourier Transform}\\
+If $f:\mathbb{R}\to\mathbb{R}$ with $\int_{-\infty}^{\infty}\!|f(x)|\,dx<\infty$, its (unitary) Fourier transform is
+\[
+  \widehat{f}(\alpha)=\frac{1}{\sqrt{2\pi}}
+  \int_{-\infty}^{\infty} f(x)\, e^{-\,i\,\alpha x}\,dx,
+\]
+\noindent \textbf{Inverse Transform}\\
+If $\varphi(\alpha)$ is similarly integrable,
+\[
+  \mathcal{F}^{-1}(\varphi)(x)= \frac{1}{\sqrt{2\pi}}
+  \int_{-\infty}^{\infty}\!\varphi(\alpha)\,e^{\,i\,\alpha x}\,d\alpha.
+\]
+
+\noindent \textbf{Fourier Transform of \(f * g\)}\\
+Let \(f\) and \(g\) be piecewise continuous and absolutely integrable. Then
+\[
+  \int_{-\infty}^{+\infty} |(f * g)(x)|\,dx < +\infty,\quad
+  \mathcal{F}[f * g](\alpha)
+  = \sqrt{2\pi} \,\hat{f}(\alpha)\,\hat{g}(\alpha).
+\]
+
+\setlength{\columnsep}{-35pt} % Slight negative shift to fit columns nicely
+\begin{multicols}{2}
+    \small
+    \textbf{Scaling} \\
+    $\mathcal{F}\{f(ax)\} = \frac{1}{|a|} F\!\bigl(\tfrac{\alpha}{a}\bigr)$\\
+
+    \textbf{Shifting} \\
+    $\mathcal{F}\{f(x - x_0)\} = e^{-\,i\,\alpha x_0}\,F(\alpha)$\\
+
+    \textbf{Modulation} \\
+    $\mathcal{F}\{e^{\,i\,\omega_0 x} f(x)\} = F(\alpha - \omega_0)$\\
+
+    \textbf{Differentiation} \\
+    $\mathcal{F}\!\Bigl\{\dfrac{d^n}{dx^n}f(x)\Bigr\}
+        = (i \alpha)^n F(\alpha)$\\
+
+    \textbf{Integration} \\
+    $\mathcal{F}\!\Bigl\{\int_{-\infty}^x f(\xi)\,d\xi\Bigr\}
+        = \dfrac{1}{i \alpha}\,F(\alpha),\ \alpha\neq 0$
+
     \columnbreak
 
-    \noindent \textbf{Complex Fourier Coefficient}\\
-    Let \( f : \mathbb{R} \to \mathbb{R} \) be a \( T \)-periodic and piecewise continuous function. The complex Fourier coefficients are defined as
-    \[
-    c_n = \frac{1}{T} \int_0^T f(x) e^{-i \frac{2\pi}{T} n x} \, dx, \quad \forall n \in \mathbb{Z}. \quad
-    Ff(x) = \sum_{n=-\infty}^{\infty} c_{n}\,e^{i\frac{2\pi n}{T}x}.
-    \]
-    For a function \( \phi : \mathbb{R} \to \mathbb{C} \), we have
-    \[
-    \int_a^b \phi(x) \, dx = \int_a^b \operatorname{Re}(\phi(x)) \, dx + i \int_a^b \operatorname{Im}(\phi(x)) \, dx.
-    \]
-    \noindent \textbf{Relation to \( (a_n, b_n) \)}\\
-    \[
-    c_{n} = \tfrac{1}{2}(a_{n} - i\,b_{n}), \quad
-    c_{-n} = \tfrac{1}{2}(a_{n} + i\,b_{n}), \quad
-    c_{0} = \tfrac{a_{0}}{2}.
-    \]
+    \textbf{Convolution} \\
+    $\mathcal{F}\{f * g\}(\alpha) = F(\alpha)\,G(\alpha)$\\
 
-    \noindent \textbf{Fourier Series on $[0,L]$}\\
-    For $f:[0,L]\to \mathbb{R}$ (piecewise $C^1$):
-    \[
-    F_{c}f(x)=\tfrac{\tilde a_{0}}{2} + \sum_{n=1}^{\infty}\!\tilde a_{n}\cos\!\Bigl(\tfrac{\pi n}{L}x\Bigr),
-    \quad \tilde a_{n}=\frac{2}{L}\int_{0}^{L} f(x)\cos\!\Bigl(\tfrac{\pi n}{L}x\Bigr)dx.
-    \]
-    \[
-    F_{s}f(x)=\sum_{n=1}^{\infty}\!\tilde b_{n}\sin\!\Bigl(\tfrac{\pi n}{L}x\Bigr),
-    \quad \tilde b_{n}=\frac{2}{L}\int_{0}^{L} f(x)\sin\!\Bigl(\tfrac{\pi n}{L}x\Bigr)dx.
-    \]
+    \textbf{Multiplication} \\
+    $\mathcal{F}\{f(x)\,g(x)\}(\alpha)
+      = \dfrac{1}{2\pi}\!\int_{-\infty}^{\infty}
+        F(\kappa)\,G(\alpha - \kappa)\,d\kappa$\\
 
-    \noindent \textbf{Parseval's Identity (Periodic Case)}\\
-    If $f$ is $T$-periodic (piecewise $C^1$),
-    \[
-    \frac{1}{T}\int_{0}^{T} f^{2}(x)\,dx
-    = \frac{a_{0}^{2}}{2} + \sum_{n=1}^{\infty}(a_{n}^{2}+b_{n}^{2})
-    = \sum_{n=-\infty}^{\infty}\!\!\bigl|c_{n}\bigr|^{2}.
-    \]
-    \noindent \textbf{The Fourier Transform}\\
-    If $f:\mathbb{R}\to\mathbb{R}$ with $\int_{-\infty}^{\infty}\!|f(x)|\,dx<\infty$, its (unitary) Fourier transform is
-    \[
-    \widehat{f}(\alpha)=\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} f(x)\, e^{-\,i\,\alpha x}\,dx.
-    \]
+    \textbf{Real/Imag Parts} \\
+    $\mathcal{F}\{\text{Re}[\,f(x)\,]\}
+      = \dfrac{F(\alpha) + F^*(-\alpha)}{2}, \quad
+      \mathcal{F}\{\text{Im}[\,f(x)\,]\}
+      = \dfrac{F(\alpha) - F^*(-\alpha)}{2i}$
+\end{multicols}
+\end{multicols}
 
-    \noindent \textbf{Inverse Transform}\\
-    If $\varphi(\alpha)$ is similarly integrable,
-    \[
-    \mathcal{F}^{-1}(\varphi)(x)= \frac{1}{\sqrt{2\pi}}
-    \int_{-\infty}^{\infty}\!\varphi(\alpha)\,e^{\,i\,\alpha x}\,d\alpha,\quad
-    f(x)=\mathcal{F}^{-1}\!\bigl(\widehat{f}\bigr)(x).
-    \]
+\noindent \textbf{Important Trigonometric Identities}
+\begin{multicols}{2}
+\noindent
+$\sin(2x) = 2\sin x\cos x,$\\
+$\cos(2x) = 2\cos^2 x - 1 = 1 - 2\sin^2 x = \cos^2 x - \sin^2 x,$\\
+$\cos(a \pm b) = \cos a\cos b \mp \sin a\sin b,$\\
+$\sin(a \pm b) = \sin a\cos b \pm \cos a\sin b.$
 
+\columnbreak
 
-    \noindent \textbf{Fourier Transform of \(f * g\)}\\
-    Let \(f\) and \(g\) be piecewise continuous on \(\mathbb{R}\) such that \(\int_{-\infty}^{+\infty} |f(x)| dx < +\infty\) and \(\int_{-\infty}^{+\infty} |g(x)| dx < +\infty\). Then:
-    \[
-    \int_{-\infty}^{+\infty} |(f * g)(x)| dx < +\infty \quad \text{and} \quad \mathcal{F}[f * g](\alpha) = \sqrt{2\pi} \hat{f}(\alpha) \cdot \hat{g}(\alpha)
-    \]
-    \end{multicols}
-    \vspace{-20px}
-    \begin{minipage}[htp]{0.6\textwidth}
-        \noindent \textbf{Term-by-Term Differentiation}\\
-        If $f$ is $T$-periodic, continuous, and piecewise $C^1$, then
-        \[
-        \frac{d}{dx}\Bigl[
-          \tfrac{a_0}{2}\!+\!\!\sum_{n=1}^\infty
-          (a_n\cos(\tfrac{2\pi n}{T}x)+b_n\sin(\tfrac{2\pi n}{T}x))
-        \Bigr]  =
-        \sum_{n=1}^\infty \frac{2\pi n}{T}\bigl[-\,a_n\sin(\tfrac{2\pi n}{T}x)+b_n\cos(\tfrac{2\pi n}{T}x)\bigr] \]\[
-       = \lim_{t \to 0} \frac{f'(x - t) + f'(x + t)}{2}.
-        \]
-    \end{minipage}
-    \hfill
-    \begin{minipage}[htp]{0.35\textwidth}
-        \noindent \textbf{Term-by-Term integration} \\
+$\cos a\cos b = \tfrac{1}{2}\bigl[\cos(a - b) + \cos(a + b)\bigr],$ \\
+$\sin a\sin b = \tfrac{1}{2}\bigl[\cos(a - b) - \cos(a + b)\bigr],$ \\
+$\sin a\cos b = \tfrac{1}{2}\bigl[\sin(a + b) + \sin(a - b)\bigr],$ \\
+$\cos a\sin b = \tfrac{1}{2}\bigl[\sin(a + b) - \sin(a - b)\bigr].$
+\end{multicols}
+\normalsize
 
-        Let \( f \) be a \( T \)-periodic and piecewise \( C^1 \) function with zero mean,
-        \[
-        \int_0^T f(t) \, dt = 0.
-        \]
-    \end{minipage}
-
+\endgroup
 
 \end{document}
