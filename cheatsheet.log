@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  4 JAN 2025 15:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  6 JAN 2025 09:51
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -373,18 +373,18 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 []\OT1/cmr/m/n/10 Select closed curves $^^@$
  []
 
 
-Overfull \hbox (11.84865pt too wide) detected at line 160
+Overfull \hbox (11.84865pt too wide) detected at line 159
 [] [][] [] \OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 dx dy \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 F \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 n dl \OT1/cmr/m/n/10 = [][] [] \OML/cmm/m/it/10 dt:
  []
 
 
-Overfull \hbox (87.03075pt too wide) detected at line 168
-[] [] [][] [] \OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 dx dy dz \OT1/cmr/m/n/10 = [] [][] \OML/cmm/m/it/10 F \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 n ds \OT1/cmr/m/n/10 = [] [][]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^[\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u; v\OT1/cmr/m/n/10 )); \OML/cmm/m/it/10 ^^[[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u; v\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^ \OML/cmm/m/it/10 ^^[[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u; v\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 i \OML/cmm/m/it/10 du dv
+Overfull \hbox (94.2982pt too wide) detected at line 167
+[] [] [][] [] \OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 dx dy dz \OT1/cmr/m/n/10 = [] [][] \OML/cmm/m/it/10 F \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 n ds \OT1/cmr/m/n/10 = [] [][]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^[\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u; v\OT1/cmr/m/n/10 )); [](\OML/cmm/m/it/10 u; v\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^ []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u; v\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 i \OML/cmm/m/it/10 du dv
  []
 
 <images/dirac_delta.png, id=11, 554.3109pt x 411.2163pt>
@@ -453,41 +453,11 @@ Overfull \hbox (46.74629pt too wide) detected at line 451
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--526
+Underfull \hbox (badness 10000) in paragraph at lines 524--533
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 527--529
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 530--532
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 533--536
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--545
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 546--550
-
- []
-
-
-Overfull \hbox (47.76003pt too wide) in paragraph at lines 551--556
-\OMS/cmsy/m/n/9 Ff[]\OT1/cmr/m/n/9 [ \OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 x\OT1/cmr/m/n/9 ) ]\OMS/cmsy/m/n/9 g \OT1/cmr/m/n/9 = []\OML/cmm/m/it/9 ;  \OMS/cmsy/m/n/9 Ff[]\OT1/cmr/m/n/9 [ \OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 x\OT1/cmr/m/n/9 ) ]\OMS/cmsy/m/n/9 g \OT1/cmr/m/n/9 =
- []
-
-[2] [3] (./cheatsheet.aux)
+[2] (./cheatsheet.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -496,16 +466,16 @@ L3 programming layer <2024-02-20>
 Here is how much of TeX's memory you used:
  4099 strings out of 474116
  62943 string characters out of 5743683
- 1998187 words of memory out of 5000000
+ 2004187 words of memory out of 5000000
  26409 multiletter control sequences out of 15000+600000
  567411 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,12n,65p,751b,297s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,12n,65p,751b,301s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on cheatsheet.pdf (4 pages, 395965 bytes).
+Output written on cheatsheet.pdf (3 pages, 395635 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 158 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
