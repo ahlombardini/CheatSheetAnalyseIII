@@ -56,7 +56,7 @@
 \end{titlepage}
 
 
-\vspace*{-10px}
+\vspace*{-20px}
 \noindent\textbf{Regular Curve.}
 A continuously differentiable map
 $\gamma : [a,b] \to \mathbb{R}^n$
@@ -86,7 +86,7 @@ Given $\sigma : D \subset \mathbb{R}^2 \to \mathbb{R}^3$, $\sigma(u,v)$, \vspace
 = \iint_D \big\langle F(\sigma(u,v)), \sigma_u(u,v)\times\sigma_v(u,v)\big\rangle \,du\,dv.
 \quad
 \iint_{\sigma} f(\mathbf{x}) \, ds
-= \iint_D f\big(\sigma(u,v)\big)\,\|\sigma_u(u,v)\times\sigma_v(u,v)\| \,du\,dv,
+= \iint_D f\big(\sigma(u,v)\big)\,\|\sigma_u(u,v)\times\sigma_v(u,v)\| \,du\,dv,\vspace{-10px}
 \]
 \noindent \textbf{Conservative Fields and Path Independence}\\
 A map \( F : \Omega \subseteq \mathbb{R}^n \to \mathbb{R}^n \) is \emph{conservative} if there exists a differentiable function \( \varphi : \Omega \to \mathbb{R} \) such that \( \nabla f = F \).\\
@@ -105,6 +105,13 @@ $\\
         \item[-] If $\operatorname{curl} \mathbf{F} \neq \mathbf{0}$, $\mathbf{F}$ is \textbf{not} conservative.
         \item[-] If $\operatorname{curl} \mathbf{F} = \mathbf{0}$, proceed to Step 2.
     \end{itemize}
+    \vspace{-5px}
+    \fbox{%
+    \begin{minipage}[t]{1\textwidth}
+        $\textbf{2D:} \nabla \times \mathbf{F} = \frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y}$
+    \end{minipage}
+}
+
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.25\textwidth}
@@ -114,11 +121,25 @@ $\\
         \item[-] If \textit{yes}, $\mathbf{F}$ is conservative.
         \item[-] If \textit{no}, proceed to Step 3.
     \end{itemize}
+    \vspace{-10px}
+    \hspace{20px}
+    \fbox{%
+    \begin{minipage}[t]{0.8\textwidth}
+        $
+        \textbf{3D: } \nabla \times \mathbf{F} =
+        \begin{bmatrix}
+        \frac{\partial F_z}{\partial y} - \frac{\partial F_y}{\partial z} \\[1.5ex]
+        \frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x} \\[1.5ex]
+        \frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y}
+        \end{bmatrix}
+        $
+    \end{minipage}
+}
+
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.23\textwidth}
     \noindent\textbf{3 - Circulation Method:} \vspace{-8px}
-
     \begin{enumerate}[leftmargin=*]
         \setlength\itemsep{-4px}
         \item Select closed curves $\Gamma$ around each hole in $\Omega$.
@@ -139,9 +160,9 @@ $\\
         \item Determine $\alpha(y,z)$ such that \\ $\nabla \varphi = \mathbf{F}$.
         \item If successful, $\varphi$ is the potential function for $\mathbf{F}$, confirming $\mathbf{F}$ is conservative.
     \end{enumerate}
-
-\end{minipage}
+\end{minipage}\\
 \vspace*{-30px}
+
 \subsubsection*{Vector Calculus Theorems}
 \begin{minipage}[htp]{0.49\textwidth}
 \noindent\textbf{Green's Theorem (Plane)}
