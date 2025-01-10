@@ -57,19 +57,14 @@
 
 
 \vspace*{-20px}
-\noindent\textbf{Regular Curve.}
-A continuously differentiable map
+\noindent\textbf{Regular Curve.} A continuously differentiable map
 $\gamma : [a,b] \to \mathbb{R}^n$
-is \emph{regular} if $\gamma'(t) \neq 0$ for all $t \in [a,b]$.
-
-\smallskip
+is \emph{regular} if $\gamma'(t) \neq 0$ for all $t \in [a,b]$. \\
 \noindent\textbf{Simple Curve.}
 A continuous map
 $\gamma : [a,b] \to \mathbb{R}^n$
 is \emph{simple} if it does not intersect itself (except possibly at endpoints):
-$\gamma(t_1) = \gamma(t_2) \implies t_1 = t_2$
-
-\smallskip
+$\gamma(t_1) = \gamma(t_2) \implies t_1 = t_2$ \\
 \noindent\textbf{Simply Connected Domain.}
 An open set $\Omega \subseteq \mathbb{R}^n$ is \emph{simply connected} if for any two continuous curves
 $\gamma_0, \gamma_1 : [a,b] \to \Omega$
@@ -80,13 +75,15 @@ that deforms $\gamma_0$ into $\gamma_1$ within $\Omega$ while keeping the endpoi
 \smallskip \newline
 \noindent\textbf{Curve in } $\mathbb{R}^n$: Given $\gamma : [a,b] \to \mathbb{R}^n$,$ \int_{\gamma} F \cdot d\mathbf{l} = \int_a^b \big\langle F(\gamma(t)), \gamma'(t)\big\rangle \, dt, \quad \int_{\gamma} f(\mathbf{x}) \, ds = \int_a^b f\big(\gamma(t)\big)\,\|\gamma'(t)\| \, dt.$\\
 \noindent\textbf{Surface in } $\mathbb{R}^3$:
-Given $\sigma : D \subset \mathbb{R}^2 \to \mathbb{R}^3$, $\sigma(u,v)$, \vspace{-10px}
+Given $\sigma : D \subset \mathbb{R}^2 \to \mathbb{R}^3$, $\sigma(u,v)$,
+\vspace{-10px}
 \[
 \iint_{\sigma} F \cdot d\mathbf{S}
-= \iint_D \big\langle F(\sigma(u,v)), \sigma_u(u,v)\times\sigma_v(u,v)\big\rangle \,du\,dv.
+= \iint_D \big\langle F(\sigma(u,v)), \frac{\partial \sigma}{\partial u}\times\frac{\partial \sigma}{\partial v}\big\rangle \,du\,dv.
 \quad
 \iint_{\sigma} f(\mathbf{x}) \, ds
-= \iint_D f\big(\sigma(u,v)\big)\,\|\sigma_u(u,v)\times\sigma_v(u,v)\| \,du\,dv,\vspace{-10px}
+= \iint_D f\big(\sigma(u,v)\big)\,\Big\|\frac{\partial \sigma}{\partial u}\times\frac{\partial \sigma}{\partial v}\Big\| \,du\,dv.
+\vspace{-5px}
 \]
 \noindent \textbf{Conservative Fields and Path Independence}\\
 A map \( F : \Omega \subseteq \mathbb{R}^n \to \mathbb{R}^n \) is \emph{conservative} if there exists a differentiable function \( \varphi : \Omega \to \mathbb{R} \) such that \( \nabla f = F \).\\
@@ -121,7 +118,6 @@ $\\
         \item[-] If \textit{yes}, $\mathbf{F}$ is conservative.
         \item[-] If \textit{no}, proceed to Step 3.
     \end{itemize}
-    \vspace{-10px}
     \hspace{20px}
     \fbox{%
     \begin{minipage}[t]{0.8\textwidth}
@@ -161,9 +157,15 @@ $\\
         \item If successful, $\varphi$ is the potential function for $\mathbf{F}$, confirming $\mathbf{F}$ is conservative.
     \end{enumerate}
 \end{minipage}\\
-\vspace*{-30px}
-
+$$\gamma(t) = \big(x(t), y(t)\big), \, \mathbf{n}(t) = \frac{\big(y'(t), -x'(t)\big)}{\left\|\gamma'(t)\right\|} \vspace{-20px}
+\quad \sigma(u, v) = \big(x(u, v), y(u, v), z(u, v)\big), \;
+\mathbf{n}(u, v) = \frac{\frac{\partial \sigma}{\partial u} \times \frac{\partial \sigma}{\partial v}}
+{\left\|\frac{\partial \sigma}{\partial u} \times \frac{\partial \sigma}{\partial v}\right\|}, \; \text{!\,not necessarly outward}
+$$
+\vfill
+\vspace{-10px}
 \subsubsection*{Vector Calculus Theorems}
+\vspace{-10px}
 \begin{minipage}[htp]{0.49\textwidth}
 \noindent\textbf{Green's Theorem (Plane)}
 Let \( \Omega \subseteq \mathbb{R}^2 \) be a regular domain with a positively oriented boundary \( \partial \Omega \), and \( F \in C^1(\overline{\Omega}, \mathbb{R}^2) \). Then
@@ -184,7 +186,7 @@ Let \( \Omega \subseteq \mathbb{R}^2 \) be a regular domain with a positively or
 \noindent\textbf{Divergence Theorem (Space)}
 Let \( \Omega \subseteq \mathbb{R}^3 \) be a regular domain, \( n : \partial \Omega \to \mathbb{R}^3 \) a continuous outward unit normal vector field, and \( F \in C^1(\overline{\Omega}, \mathbb{R}^3) \). Then
 \[
-\iiint_{\Omega} \operatorname{div} F(x,y,z) \, dx \, dy \, dz = \iint_{\partial \Omega} F \cdot n \, ds = \iint_{A} \langle F(\sigma(u,v)); \frac{\partial \sigma}{\partial u}(u,v) \wedge \frac{\partial \sigma}{\partial v}(u,v) \rangle \, du \, dv
+\iiint_{\Omega} \operatorname{div} F(x,y,z) \, dx \, dy \, dz = \iint_{\partial \Omega} F \cdot n \, ds = \iint_{A} \langle F(\sigma); \frac{\partial \sigma}{\partial u} \wedge \frac{\partial \sigma}{\partial v} \rangle \, du \, dv
 \]
 
 \end{minipage}
@@ -192,9 +194,14 @@ Let \( \Omega \subseteq \mathbb{R}^3 \) be a regular domain, \( n : \partial \Om
 \begin{minipage}[htp]{0.49\textwidth}
 \noindent\textbf{Stokes' Theorem}
 Let \( \Omega \subseteq \mathbb{R}^3 \) be an open set, \( \Sigma \subseteq \Omega \) a piecewise smooth orientable surface, and \( F \in C^1(\Omega, \mathbb{R}^3) \), then
-\vspace{-10px}\[
-\iint_{\Sigma} \operatorname{curl} F \, ds = \int_{\partial \Sigma} F \cdot dl
+\vspace{-10px}
+\[
+\iint_{\Sigma} \operatorname{curl} F \cdot n \, ds
+= \int_{\partial \Sigma} F \cdot dl
+= \iint_{A} \left\langle \operatorname{curl} F(\sigma(u,v)), \frac{\partial \sigma}{\partial u} \wedge \frac{\partial \sigma}{\partial v} \right\rangle \, du \, dv
+= \int_{a}^{b} F(\gamma(t)) \cdot \gamma'(t) \, dt
 \]
+
 \end{minipage}\\
 \begin{minipage}[t]{0.27\textwidth}
     \centering
@@ -393,34 +400,26 @@ Let \( f : \mathbb{R} \to \mathbb{R} \) be \( T \)-periodic and piecewise \( C^1
 \]
 
 \noindent \textbf{Real Fourier Series}\\
-For $f:\mathbb{R}\to\mathbb{R}$, $T$-periodic, piecewise $C^1$, the real Fourier series is
-\[
+For $f:\mathbb{R}\to\mathbb{R}$, $T$-periodic, piecewise $C^1$, the real Fourier series is \vspace{-3px}
+\[ \vspace{-8px}
   Ff(x)= \frac{a_{0}}{2}
    + \sum_{n=1}^{\infty}\!\Bigl[a_{n}\cos\!\bigl(\tfrac{2\pi n}{T}x\bigr)
    + b_{n}\sin\!\bigl(\tfrac{2\pi n}{T}x\bigr)\Bigr].
 \]
-\noindent \textbf{Fourier Coefficients:}
+\noindent \textbf{Fourier Coefficients:} \vspace{-3px}
 \[
   a_{n} = \frac{2}{T}\!\int_{0}^{T}\!f(x)
           \cos\!\Bigl(\tfrac{2\pi n}{T}x\Bigr)\,dx,\quad
   b_{n} = \frac{2}{T}\!\int_{0}^{T}\!f(x)
           \sin\!\Bigl(\tfrac{2\pi n}{T}x\Bigr)\,dx,
-\]
+\] \vspace{-8px}
 \[
   a_{0} = \frac{2}{T}\int_{0}^{T} f(x)\,dx.
 \]
 \noindent \textbf{Parity:} If $f$ is even, $b_{n}=0$; if $f$ is odd, $a_{n}=0$.\\
 
 \small
-\noindent \textbf{Convolution Product}\\
-Let \(f,g:\mathbb{R} \to \mathbb{R}\) such that
-\(\int_{-\infty}^{+\infty} |f(x)|\,dx < +\infty\) and
-\(\int_{-\infty}^{+\infty} |g(x)|\,dx < +\infty\).
-\[
-  (f * g)(x)
-  = \int_{-\infty}^{+\infty} f(x - t)\,g(t)\,dt
-  = \int_{-\infty}^{+\infty} f(t)\,g(x - t)\,dt
-\]
+
 \noindent \textbf{Term-by-Term Differentiation}\\
 If $f$ is $T$-periodic, continuous, and piecewise $C^1$, then
 \[
@@ -431,8 +430,19 @@ If $f$ is $T$-periodic, continuous, and piecewise $C^1$, then
 \[
   = \lim_{t \to 0} \frac{f'(x - t) + f'(x + t)}{2}.
 \]
+\noindent \textbf{Term-by-Term Integration}\\
+If $f$ is $T$-periodic, continuous, and piecewise $C^1$, then
+\[
+  \int Ff(x)\,dx
+  = \sum_{n=1}^\infty \frac{2}{T n \pi} \left[ a_n \sin\left(\tfrac{2\pi n}{T}x\right)
+        - b_n \cos\left(\tfrac{2\pi n}{T}x\right) \right] + C
+\]
+\[
+  = \lim_{h \to 0} \frac{1}{2h} \int_{x - h}^{x + h} Ff(t)\,dt,
+\]
+where $C$ is the constant of integration.
 
-\noindent \textbf{1) Poisson on }$[a,b]$:
+\noindent \textbf{Poisson on }$[a,b]$
 \[
 \begin{cases}
 -\,u''(x)=f(x),\\[2pt]
@@ -454,19 +464,21 @@ u^f(x)=\sum_{n=1}^{\infty} b_n \,\frac{L^2}{\pi^2\,n^2}
 \,\sin\!\Bigl(\frac{n\pi x}{L}\Bigr).
 \]
 \[
-u(x)=u^g(x)+u^f(x).
+u(x)=u^g(x)+u^f(x) \quad (\text{superposition principle}).
 \]
-\noindent \textbf{2) Poisson with mass term on }$\mathbb{R}$:
+\noindent \textbf{Poisson with mass term on }$\mathbb{R}$ \vspace{-5px}
 \[
 -\,u''(x)+k^2\,u(x)=f(x),
 \quad
 \widehat{u}(\alpha)=\frac{\widehat{f}(\alpha)}{\alpha^2 + k^2}.
 \]
+\vspace{-5px}
 \[
 g(x)=\frac{1}{2k}\,e^{-k|x|},
 \quad
 \widehat{g}(\alpha)=\frac{1}{\alpha^2 + k^2},
-\quad
+\]
+\vspace{-5px}\[
 u(x)=(g*f)(x)
 =\frac{1}{2k}\!\int_{-\infty}^{\infty} f(y)\,e^{-k|\,x-y\,|}\,dy.
 \]
@@ -478,15 +490,14 @@ Let \( f : \mathbb{R} \to \mathbb{R} \) be \( T \)-periodic and piecewise contin
 \[
   c_n = \frac{1}{T} \int_0^T f(x)\, e^{-i \frac{2\pi}{T} n x} \, dx,
   \quad
-  Ff(x) = \sum_{n=-\infty}^{\infty} c_{n}\,e^{i\frac{2\pi n}{T}x}.
+  Ff(x) = \sum_{n=-\infty}^{\infty} c_{n}\,e^{i\frac{2\pi n}{T}x}.\vspace{-10px}
 \]
-For \( \phi : \mathbb{R} \to \mathbb{C} \),
-\[
-  \int_a^b \phi(x)\,dx
-  = \int_a^b \operatorname{Re}(\phi(x)) \, dx + i \int_a^b \operatorname{Im}(\phi(x)) \, dx.
+For \( \phi : \mathbb{R} \to \mathbb{C} \), \vspace{-5px}
+\[ \int_a^b \phi(x)\,dx
+  = \int_a^b \operatorname{Re}(\phi(x)) \, dx + i \int_a^b \operatorname{Im}(\phi(x)) \, dx. \vspace{-5px}
 \]
 \noindent \textbf{Relation to \( (a_n, b_n) \)}\quad
-\[
+\[ \vspace{-5px}
   c_{n} = \tfrac{1}{2}(a_{n} - i\,b_{n}),\
   c_{-n} = \tfrac{1}{2}(a_{n} + i\,b_{n}),\
   c_{0} = \tfrac{a_{0}}{2}.
@@ -522,7 +533,7 @@ Let $f \in L^2(\mathbb{R})$. Then its Fourier transform $\hat{f}$ is also in $L^
 If $f:\mathbb{R}\to\mathbb{R}$ with $\int_{-\infty}^{\infty}\!|f(x)|\,dx<\infty$, its (unitary) Fourier transform is
 \[
   \widehat{f}(\alpha)=\frac{1}{\sqrt{2\pi}}
-  \int_{-\infty}^{\infty} f(x)\, e^{-\,i\,\alpha x}\,dx,
+  \int_{-\infty}^{\infty} f(x)\, e^{-\,i\,\alpha x}\,dx, \vspace{-10px}
 \]
 \noindent \textbf{Inverse Transform}\\
 If $\varphi(\alpha)$ is similarly integrable,
@@ -530,55 +541,63 @@ If $\varphi(\alpha)$ is similarly integrable,
   \mathcal{F}^{-1}(\varphi)(x)= \frac{1}{\sqrt{2\pi}}
   \int_{-\infty}^{\infty}\!\varphi(\alpha)\,e^{\,i\,\alpha x}\,d\alpha.
 \]
-
-\noindent \textbf{Fourier Transform of \(f * g\)}\\
-Let \(f\) and \(g\) be piecewise continuous and absolutely integrable. Then
+\noindent \textbf{Convolution Product}\\
+Let \(f,g:\mathbb{R} \to \mathbb{R}\) such that
+\(\int_{-\infty}^{+\infty} |f(x)|\,dx < +\infty\),
+\(\int_{-\infty}^{+\infty} |g(x)|\,dx < +\infty\). \vspace{-5px}
 \[
-  \int_{-\infty}^{+\infty} |(f * g)(x)|\,dx < +\infty,\quad
-  \mathcal{F}[f * g](\alpha)
-  = \sqrt{2\pi} \,\hat{f}(\alpha)\,\hat{g}(\alpha).
+  (f * g)(x)
+  = \int_{-\infty}^{+\infty} f(x - t)\,g(t)\,dt
+  = \int_{-\infty}^{+\infty} f(t)\,g(x - t)\,dt
 \]
-\vspace*{-15px}
-\setlength{\columnsep}{-35pt} % Slight negative shift to fit columns nicely
-\begin{multicols}{2}
-    \small
+
+\vfill
+
+\setlength{\columnsep}{-70pt} % Adjusted for better column fitting
+\hspace{-15px}
+\normalsize
+\begin{minipage}[htp]{0.55\textwidth}
+  \begin{multicols}{2}
     \textbf{Scaling} \\
-    $\mathcal{F}\{f(ax)\} = \frac{1}{|a|} F\!\bigl(\tfrac{\alpha}{a}\bigr)$\\
+    $\mathcal{F}\{f(ax)\} = \frac{1}{|a|} \hat{f}\!\bigl(\tfrac{\alpha}{a}\bigr)$ \\[4pt]
+
     \textbf{Shifting} \\
-    $\mathcal{F}\{f(x - x_0)\} = e^{-\,i\,\alpha x_0}\,F(\alpha)$\\
+    $\mathcal{F}\{f(x - x_0)\} = e^{-i\alpha x_0}\,\hat{f}(\alpha)$ \\[4pt]
+
     \textbf{Modulation} \\
-    $\mathcal{F}\{e^{\,i\,\omega_0 x} f(x)\} = F(\alpha - \omega_0)$\\
-    \textbf{Differentiation} \\
-    $\mathcal{F}\!\Bigl\{\dfrac{d^n}{dx^n}f(x)\Bigr\}
-        = (i \alpha)^n F(\alpha)$\\
+    $\mathcal{F}\{e^{i\omega_0 x} f(x)\} = \hat{f}(\alpha - \omega_0)$ \\[4pt]
 
-
+    \textbf{Convolution} \\
+    $\mathcal{F}[f * g](\alpha)
+    = \sqrt{2\pi} \,\hat{f}(\alpha)\,\hat{g}(\alpha).$ \\[4pt]
     \columnbreak
+
+    \textbf{Differentiation} \\[2pt]
+    $\mathcal{F}\!\Bigl\{\dfrac{d^n}{dx^n}f(x)\Bigr\} = (i\alpha)^n \hat{f}(\alpha)$ \\[4pt]
 
     \textbf{Integration} \\
     $\mathcal{F}\!\Bigl\{\int_{-\infty}^x f(\xi)\,d\xi\Bigr\}
-        = \dfrac{1}{i \alpha}\,F(\alpha),\ \alpha\neq 0$
-    \textbf{Multiplication} \\
-    $\mathcal{F}\{f(x)\,g(x)\}(\alpha)
-      = \dfrac{1}{2\pi}\!\int_{-\infty}^{\infty}
-        F(\kappa)\,G(\alpha - \kappa)\,d\kappa$\\
-    \textbf{Real/Imag Parts} \\
-    $\mathcal{F}\{\text{Re}[\,f(x)\,]\}
-      = \dfrac{F(\alpha) + F^*(-\alpha)}{2}$,\\
-      $\mathcal{F}\{\text{Im}[\,f(x)\,]\}
-      = \dfrac{F(\alpha) - F^*(-\alpha)}{2i}$
-\end{multicols}
-\noindent \textbf{Important Trigonometric Identities} \\
-$\sin(2x) = 2\sin x\cos x,$\\
-$\cos(2x) = 2\cos^2 x - 1 = 1 - 2\sin^2 x = \cos^2 x - \sin^2 x,$\\
-$\cos(a \pm b) = \cos a\cos b \mp \sin a\sin b,$\\
-$\sin(a \pm b) = \sin a\cos b \pm \cos a\sin b.$\\
-$\cos a\cos b = \tfrac{1}{2}\bigl[\cos(a - b) + \cos(a + b)\bigr],$ \\
-$\sin a\sin b = \tfrac{1}{2}\bigl[\cos(a - b) - \cos(a + b)\bigr],$ \\
-$\sin a\cos b = \tfrac{1}{2}\bigl[\sin(a + b) + \sin(a - b)\bigr],$ \\
-$\cos a\sin b = \tfrac{1}{2}\bigl[\sin(a + b) - \sin(a - b)\bigr].$
+        = \dfrac{1}{i\alpha}\,\hat{f}(\alpha), \ \alpha \neq 0$ \\[4pt]
 
+    \textbf{Multiplication} \\
+    $
+\mathcal{F}\{f(x) \cdot g(x)\} = \frac{1}{\sqrt{2\pi}} \left( \mathcal{F}\{f(x)\} * \mathcal{F}\{g(x)\} \right)
+$ \\[4pt]
+  \end{multicols}
+\end{minipage}
+\normalsize
+\noindent \textbf{Important Trigonometric Identities} \\[2pt]
+$\sin(2x) = 2\sin x\cos x,$ \\[3pt]
+$\cos(2x) = 2\cos^2 x - 1 = 1 - 2\sin^2 x = \cos^2 x - \sin^2 x,$ \\[3pt]
+$\cos(a \pm b) = \cos a\cos b \mp \sin a\sin b,$ \\[3pt]
+$\sin(a \pm b) = \sin a\cos b \pm \cos a\sin b,$ \\[3pt]
+$\cos a\cos b = \tfrac{1}{2}\bigl[\cos(a - b) + \cos(a + b)\bigr],$ \\[3pt]
+$\sin a\sin b = \tfrac{1}{2}\bigl[\cos(a - b) - \cos(a + b)\bigr],$ \\[3pt]
+$\sin a\cos b = \tfrac{1}{2}\bigl[\sin(a + b) + \sin(a - b)\bigr],$ \\[3pt]
+$\cos a\sin b = \tfrac{1}{2}\bigl[\sin(a + b) - \sin(a - b)\bigr].$
 \normalsize
 \end{multicols}
 \endgroup
+
+
 \end{document}

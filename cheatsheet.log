@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  9 JAN 2025 13:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.4)  10 JAN 2025 12:06
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -365,109 +365,147 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (10.13332pt too wide) in paragraph at lines 113--114
+Overfull \hbox (10.13332pt too wide) in paragraph at lines 110--111
 [] 
  []
 
 
-Overfull \hbox (3.16167pt too wide) in paragraph at lines 125--138
+Overfull \hbox (3.16167pt too wide) in paragraph at lines 121--134
   [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 []\OT1/cmr/m/n/10 Select closed curves $^^@$
  []
 
 
-Overfull \hbox (11.84865pt too wide) detected at line 180
+Underfull \hbox (badness 10000) in paragraph at lines 87--160
+
+ []
+
+
+Overfull \hbox (11.84865pt too wide) detected at line 182
 [] [][] [] \OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 dx dy \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 F \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 n dl \OT1/cmr/m/n/10 = [][] [] \OML/cmm/m/it/10 dt:
  []
 
 
-Overfull \hbox (94.2982pt too wide) detected at line 188
-[] [] [][] [] \OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 dx dy dz \OT1/cmr/m/n/10 = [] [][] \OML/cmm/m/it/10 F \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 n ds \OT1/cmr/m/n/10 = [] [][]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^[\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u; v\OT1/cmr/m/n/10 )); [](\OML/cmm/m/it/10 u; v\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^ []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u; v\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 i \OML/cmm/m/it/10 du dv
+Overfull \hbox (24.8398pt too wide) detected at line 190
+[] [] [][] [] \OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 dx dy dz \OT1/cmr/m/n/10 = [] [][] \OML/cmm/m/it/10 F \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 n ds \OT1/cmr/m/n/10 = [] [][]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^[\OT1/cmr/m/n/10 ); [] \OMS/cmsy/m/n/10 ^ []i \OML/cmm/m/it/10 du dv
+ []
+
+
+Overfull \hbox (107.63548pt too wide) detected at line 203
+[] [][] [] \OML/cmm/m/it/10 F \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 n ds \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 F \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 dl \OT1/cmr/m/n/10 = [] [][] []  \OML/cmm/m/it/10 du dv \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^M\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )) \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 ^^M[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 dt
  []
 
 <images/dirac_delta.png, id=11, 554.3109pt x 411.2163pt>
 File: images/dirac_delta.png Graphic file (type png)
 <use images/dirac_delta.png>
-Package pdftex.def Info: images/dirac_delta.png  used on input line 296.
+Package pdftex.def Info: images/dirac_delta.png  used on input line 303.
 (pdftex.def)             Requested size: 147.52144pt x 109.43611pt.
 
-Overfull \hbox (7.02524pt too wide) in paragraph at lines 294--297
+Overfull \hbox (7.02524pt too wide) in paragraph at lines 301--304
 [] 
  []
 
 <images/dirac_comb.png, id=13, 557.2017pt x 410.4936pt>
 File: images/dirac_comb.png Graphic file (type png)
 <use images/dirac_comb.png>
-Package pdftex.def Info: images/dirac_comb.png  used on input line 303.
+Package pdftex.def Info: images/dirac_comb.png  used on input line 310.
 (pdftex.def)             Requested size: 147.52144pt x 108.68007pt.
 
-Overfull \hbox (7.02524pt too wide) in paragraph at lines 300--304
+Overfull \hbox (7.02524pt too wide) in paragraph at lines 307--311
 [] 
  []
 
 <images/scaled_dirac_delta.png, id=14, 549.252pt x 414.1071pt>
 File: images/scaled_dirac_delta.png Graphic file (type png)
 <use images/scaled_dirac_delta.png>
-Package pdftex.def Info: images/scaled_dirac_delta.png  used on input line 309.
+Package pdftex.def Info: images/scaled_dirac_delta.png  used on input line 316.
 (pdftex.def)             Requested size: 147.52144pt x 111.22276pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 307--310
+Underfull \hbox (badness 10000) in paragraph at lines 314--317
 
  []
 
 
-Overfull \hbox (7.02524pt too wide) in paragraph at lines 307--310
+Overfull \hbox (7.02524pt too wide) in paragraph at lines 314--317
 [] 
  []
 
 <images/heaviside.png, id=15, 549.252pt x 412.6617pt>
 File: images/heaviside.png Graphic file (type png)
 <use images/heaviside.png>
-Package pdftex.def Info: images/heaviside.png  used on input line 319.
+Package pdftex.def Info: images/heaviside.png  used on input line 326.
 (pdftex.def)             Requested size: 147.52144pt x 110.83455pt.
 
-Overfull \hbox (7.02524pt too wide) in paragraph at lines 313--320
+Overfull \hbox (7.02524pt too wide) in paragraph at lines 320--327
 [] 
  []
 
 [1 <./images/dirac_delta.png> <./images/dirac_comb.png> <./images/scaled_dirac_delta.png> <./images/heaviside.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 359--362
+Underfull \hbox (badness 10000) in paragraph at lines 366--369
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 380--382
+Underfull \hbox (badness 10000) in paragraph at lines 387--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--413
+Underfull \hbox (badness 10000) in paragraph at lines 418--420
 
  []
 
 
-Overfull \hbox (46.74629pt too wide) detected at line 472
-\OML/cmm/m/it/9 g\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 x\OT1/cmr/m/n/9 ) = [] \OML/cmm/m/it/9 e[];  []\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 \OT1/cmr/m/n/9 ) = []\OML/cmm/m/it/9 ;  u\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 x\OT1/cmr/m/n/9 ) = (\OML/cmm/m/it/9 g \OMS/cmsy/m/n/9 ^^C \OML/cmm/m/it/9 f\OT1/cmr/m/n/9 )(\OML/cmm/m/it/9 x\OT1/cmr/m/n/9 ) = []  [][] \OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 y\OT1/cmr/m/n/9 ) \OML/cmm/m/it/9 e[] dy:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 545--554
+Underfull \hbox (badness 10000) in paragraph at lines 561--563
 
  []
 
-[2] (./cheatsheet.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--566
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--569
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--577
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 578--581
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 582--586
+
+ []
+
+
+Overfull \hbox (21.2704pt too wide) in paragraph at lines 557--599
+[]  $[]$
+ []
+
+
+Overfull \vbox (8.24069pt too high) has occurred while \output is active []
+
+ [2] (./cheatsheet.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -476,13 +514,13 @@ L3 programming layer <2024-02-20>
 Here is how much of TeX's memory you used:
  4099 strings out of 474116
  62943 string characters out of 5743683
- 2004187 words of memory out of 5000000
+ 2008187 words of memory out of 5000000
  26409 multiletter control sequences out of 15000+600000
  567411 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,13n,65p,751b,301s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,13n,65p,751b,349s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on cheatsheet.pdf (3 pages, 397669 bytes).
+Output written on cheatsheet.pdf (3 pages, 401398 bytes).
 PDF statistics:
  158 PDF objects out of 1000 (max. 8388607)
  90 compressed objects within 1 object stream
